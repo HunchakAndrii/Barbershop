@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  font-family: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+select {
+  border: none;
+
+  font-family: inherit;
+}
+
+input {
+  border: none;
+
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+}

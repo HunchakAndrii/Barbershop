@@ -1,0 +1,58 @@
+$black: #303030;
+$white: #FFFFFF;
+$orange: #FF6C00;
+
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-p1 {
+  font-family: Open-Sans;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-h1 {
+  font-family: Raleway;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.title-h2 {
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-family: Open-Sans;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: $black;
+    margin-right: 20px;
+    margin-bottom: 3px;
+  }
+}
+
+.main-btn {
+  background-color: transparent;
+  color: $black;
+  border: 1px solid $orange;
+  border-radius: 25px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-family: Open-Sans;
+  font-weight: 600;
+  cursor: pointer;
+}
