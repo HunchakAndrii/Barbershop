@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link rel="icon" type="image/x-icon" href="/img/barbershop.png" />    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/variables.css"/>
-    <link rel="stylesheet" href="/css/reset-example.css"/>
+    <link rel="icon" type="image/x-icon" href="/img/barbershop.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/reset-example.css" />
   </head>
   <body>
+    <div class="dark-background"></div>
+
     <header class="header">
       <div class="container">
-        <div class="header-sidebar">
+        <aside class="header-sidebar">
           <a href="/" class="logo"><img src="/img/Logo.svg" alt="logo" /></a>
           <div class="sidebar__links">
             <span></span>
             <a href="https://instagram.com/" target="_blank">Instagram</a>
             <a href="https://www.youtube.com/" target="_blank">Youtube</a>
           </div>
-        </div>
+        </aside>
         <div class="header__wrap">
           <nav class="nav">
             <a href="/" class="nav__link">About</a>
@@ -29,16 +32,59 @@
           </nav>
           <div class="contact-block">
             <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-            <button class="main-btn">Online-booking</button>
-            
+            <button class="transparent-btn">Online-booking</button>
           </div>
 
-          <div class="test-block"></div>
-        </div>
+          <div class="header__main-block">
+            <div class="block__content">
+              <div class="sub-title sub-title__main-block">
+                A hair salon for men in Kyiv
+              </div>
+              <h1 class="title-h1 title__main-block">BarberShop</h1>
+              <p class="main-block__text">
+                We are experts in trendy men’s haircuts. <br />
+                We work quickly, carefully and with style.
+              </p>
+            </div>
+            <div class="button-block">
+              <button href="#" class="nav-btn prev">Back</button>
+              <button href="#" class="nav-btn next">Forward</button>
+              
+            </div>
+          </div>
 
-        
+          <div class="mobile-header">
+            <a href="/" class="mobile-logo"><img src="/img/White-Logo.svg" alt="logo" /></a>
+            <button class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div class="mobile-menu">
+            <div class="mobile-menu__wrap">
+              <nav class="nav-mobile">
+                <a href="/" class="nav__link-mobile">About</a>
+                <a href="/" class="nav__link-mobile">Services and prices</a>
+                <a href="/" class="nav__link-mobile">Barbers</a>
+                <a href="/" class="nav__link-mobile">Contacts</a>
+              </nav>
+              <div class="contact-block-mobile">
+                 <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                 <button class="main-btn">Online-booking</button>
+              </div>
+              <div class="sidebar__links-mobile">
+                <span></span>
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+
 
     <script src="/js/main.js"></script>
   </body>

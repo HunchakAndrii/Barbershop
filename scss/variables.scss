@@ -1,4 +1,5 @@
 $black: #303030;
+$gray: #9DA4BD;
 $white: #FFFFFF;
 $orange: #FF6C00;
 
@@ -7,6 +8,12 @@ $orange: #FF6C00;
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: 650px) {
+  .container  {
+    padding: 0px;
+  }
 }
 
 .text-p1 {
@@ -21,6 +28,12 @@ $orange: #FF6C00;
   font-weight: 700;
 }
 
+@media (max-width: 700px) {
+  .title-h1{
+    font-size: 48px;
+  }
+}
+
 .title-h2 {
   font-family: Raleway;
   font-size: 42px;
@@ -32,7 +45,6 @@ $orange: #FF6C00;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  text-align: center;
 
   &::before {
     content: "";
@@ -48,6 +60,19 @@ $orange: #FF6C00;
 .main-btn {
   background-color: transparent;
   color: $black;
+  border: 1px solid $orange;
+  border-radius: 25px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-family: Open-Sans;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  color: $white;
   border: 1px solid $orange;
   border-radius: 25px;
   padding: 12px 20px;
