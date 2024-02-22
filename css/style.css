@@ -11,8 +11,10 @@
 }
 .text-p1 {
   font-family: Open-Sans;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+  color: #555555;
+  line-height: 26px;
 }
 
 .title-h1 {
@@ -21,7 +23,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .title-h1 {
     font-size: 48px;
   }
@@ -30,8 +32,14 @@
   font-family: Raleway;
   font-size: 42px;
   font-weight: 700;
+  letter-spacing: 3px;
 }
 
+@media (max-width: 850px) {
+  .title-h2 {
+    font-size: 28px;
+  }
+}
 .sub-title {
   font-family: Open-Sans;
   font-size: 11px;
@@ -173,6 +181,9 @@ html {
 
 body {
   min-height: 100vh;
+}
+
+body.body-overlay {
   overflow: hidden;
 }
 
@@ -194,6 +205,7 @@ body {
 /* #region header */
 .header {
   margin-top: 22px;
+  height: auto;
 }
 
 .header > .container {
@@ -273,7 +285,7 @@ body {
     margin-right: 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .contact-block {
     flex-direction: column-reverse;
     gap: 20px;
@@ -303,6 +315,7 @@ body {
   }
 }
 .sidebar__links {
+  height: auto;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -564,6 +577,92 @@ body {
   position: absolute;
   top: 19px;
   left: 0;
+}
+
+/* #endregion */
+/* #region about */
+.about {
+  margin-top: 458px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 650px) {
+  .about {
+    margin-top: 695px;
+  }
+}
+.about__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 750px) {
+  .about__wrap {
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .about__wrap {
+    display: block;
+  }
+}
+.about-image__block {
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .about-image__block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 650px) {
+  .about-image__block {
+    display: none;
+  }
+}
+.about-img {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.about__content {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 650px) {
+  .about__content {
+    margin: 0 auto;
+    padding: 0px 30px;
+  }
+}
+.about-title {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  color: #555555;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.about-main__text {
+  letter-spacing: 1px;
+  margin-bottom: auto;
+}
+
+.about__btn {
+  margin-top: 42px;
 }
 
 /* #endregion *//*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@ const nextBtn = document.getElementsByClassName("next")[0];
 
 const backgrounds = [
   'url("/img/main-background-img-1.png")',
-  'url("/img/imgonline-com-ua-Resize-4ucCIfnzLR.png")',
+  'url("/img/main-background-img-1.png")',
   'url("/img/imgonline-com-ua-Resize-ECO5RTQI7YGuq.png")',
 ];
 

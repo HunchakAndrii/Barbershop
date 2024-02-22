@@ -37,7 +37,6 @@
   font-display: swap;
 }
 
-
 html {
   font-family: Open-Sans;
   box-sizing: border-box;
@@ -46,6 +45,9 @@ html {
 
 body {
   min-height: 100vh;
+}
+
+body.body-overlay {
   overflow: hidden;
 }
 
@@ -64,12 +66,11 @@ body {
   display: block;
 }
 
-
 /* #region header */
 
 .header {
   margin-top: 22px;
-  
+  height: auto;
 }
 
 .header > .container {
@@ -79,11 +80,10 @@ body {
 }
 
 @media (max-width: 650px) {
-  .header > .container  {
+  .header > .container {
     display: block;
   }
 }
-
 
 .header__wrap {
   height: 43px;
@@ -91,7 +91,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   position: relative;
 }
 
@@ -124,7 +124,6 @@ body {
   }
 }
 
-
 .nav__link {
   color: $white;
   font-size: 12px;
@@ -142,7 +141,7 @@ body {
 }
 
 @media (max-width: 700px) {
-  .nav__link:not(:last-child)  {
+  .nav__link:not(:last-child) {
     margin-right: 10px;
   }
 }
@@ -161,7 +160,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .contact-block {
     flex-direction: column-reverse;
     gap: 20px;
@@ -194,17 +193,17 @@ body {
   }
 }
 
-
 .logo {
 }
 
 .sidebar__links {
+  height: auto;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  
+
   a {
     padding: 10px;
   }
@@ -278,7 +277,7 @@ body {
 }
 
 @media (max-width: 700px) {
-  .main-block__text  {
+  .main-block__text {
     font-size: 16px;
     line-height: 26px;
   }
@@ -322,13 +321,12 @@ body {
 
 .mobile-header {
   display: none;
-  
 }
 
 @media (max-width: 550px) {
-  .mobile-header  {
+  .mobile-header {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
@@ -394,7 +392,6 @@ body {
   background-color: $black;
 }
 
-
 .mobile-menu {
   position: fixed;
   top: -22px;
@@ -408,7 +405,7 @@ body {
   width: 337px;
   right: 0;
   z-index: 10;
-} 
+}
 
 .mobile-menu__wrap {
   padding: 120px 100px 0px 40px;
@@ -459,8 +456,7 @@ body {
   // align-items: center;
   gap: 24px;
   position: relative;
-  
-  
+
   a {
     padding: 10px;
     font-weight: 600;
@@ -485,6 +481,106 @@ body {
     top: 19px;
     left: 0;
   }
+}
+
+/* #endregion */
+
+/* #region about */
+
+.about {
+  margin-top: 458px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 650px) {
+  .about {
+    margin-top: 695px;
+  }
+}
+
+
+.about__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 750px) {
+  .about__wrap {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about__wrap {
+    display: block;
+  }
+}
+
+
+.about-image__block {
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .about-image__block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-image__block {
+    display: none;
+  }
+}
+
+.about-img {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+
+.about__content {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 650px) {
+  .about__content {
+    margin: 0 auto;
+    padding: 0px 30px;
+  }
+}
+
+.sub-title {
+}
+
+.about-title {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  color: $gray2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.about-main__text {
+  letter-spacing: 1px;
+  margin-bottom: auto;  // почему не работает
+}
+
+.about__btn {
+  margin-top: 42px;
 }
 
 

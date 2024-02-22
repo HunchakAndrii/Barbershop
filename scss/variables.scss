@@ -1,5 +1,6 @@
 $black: #303030;
 $gray: #9DA4BD;
+$gray2: #555555;
 $white: #FFFFFF;
 $orange: #FF6C00;
 
@@ -18,8 +19,11 @@ $orange: #FF6C00;
 
 .text-p1 {
   font-family: Open-Sans;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+  color: $gray2;
+  // letter-spacing: 2px;
+  line-height: 26px;
 }
 
 .title-h1 {
@@ -28,7 +32,7 @@ $orange: #FF6C00;
   font-weight: 700;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .title-h1{
     font-size: 48px;
   }
@@ -38,6 +42,13 @@ $orange: #FF6C00;
   font-family: Raleway;
   font-size: 42px;
   font-weight: 700;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 850px) {
+  .title-h2{
+    font-size: 28px;
+  }
 }
 
 .sub-title {
@@ -68,6 +79,7 @@ $orange: #FF6C00;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  max-width: 160px;
 }
 
 .transparent-btn {
@@ -81,5 +93,7 @@ $orange: #FF6C00;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  max-width: 160px;
+
 }
 
