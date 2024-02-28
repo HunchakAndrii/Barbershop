@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   max-width: 1210px;
   margin: 0 auto;
@@ -834,7 +833,7 @@ body.body-overlay {
 
 .box {
   max-width: 170px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 20px 25px;
   text-align: center;
 }
@@ -883,31 +882,83 @@ body.body-overlay {
 /* #endregion */
 /* #region barbers */
 .barbers {
-  background-color: #F7F7F7;
-  padding: 120px 0px;
+  background-color: #f7f7f7;
+  padding: 120px 10px;
 }
 
 .barbers__sub-title {
   margin-bottom: 20px;
 }
 
+@media (max-width: 850px) {
+  .barbers__sub-title {
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+}
 .barbers__title {
   margin-bottom: 45px;
 }
 
+@media (max-width: 850px) {
+  .barbers__title {
+    max-width: 450px;
+    margin: 0 auto 45px;
+  }
+}
 .barbers__wrap {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .barbers__wrap {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (max-width: 850px) {
+  .barbers__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.barber-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .barber__image {
   max-width: 370px;
 }
 
+@media (max-width: 850px) {
+  .barber__image {
+    max-width: 450px;
+  }
+}
+.barber__img {
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .barber__img {
+    width: 450px;
+  }
+}
+@media (max-width: 600px) {
+  .barber__img {
+    width: 370px;
+  }
+}
 .name-barber {
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .specialization-barber {
@@ -918,7 +969,7 @@ body.body-overlay {
 }
 
 .media__links {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -926,24 +977,21 @@ body.body-overlay {
 .media__link {
   min-width: 44px;
   min-height: 44px;
-  margin: 0px 10px;
+  margin: 0px 5px;
   background-color: #FFFFFF;
   padding: 12px;
   border-radius: 50%;
 }
 
+.media__link:hover .media__icon {
+  filter: invert(0.6) sepia(0.5) saturate(5) hue-rotate(340deg) brightness(1.2);
+}
+
 .media__icon {
   display: block;
   margin: 0 auto;
-}
-
-.media__icon svg {
-  fill: #303030; /* Начальный цвет иконки */
-  transition: fill 0.3s ease; /* Плавный переход цвета */
-}
-
-.media__icon:hover svg {
-  fill: #FF6C00; /* Цвет иконки при наведении */
+  fill: #303030;
+  transition: fill 0.3s ease;
 }
 
 /* #endregion *//*# sourceMappingURL=style.css.map */
