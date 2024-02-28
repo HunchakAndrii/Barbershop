@@ -82,6 +82,7 @@
   font-weight: 600;
   cursor: pointer;
   max-width: 160px;
+  width: 100%;
 }
 
 *,
@@ -1049,6 +1050,34 @@ body.body-overlay {
   .photo__img:first-child {
     width: 270px;
   }
+}
+
+/* #endregion */
+/* #region form */
+.form {
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 850px) {
+  .form {
+    padding: 100px 30px;
+  }
+}
+@media (max-width: 550px) {
+  .form {
+    padding: 85px 15px;
+  }
+}
+.one {
+  background-color: #191C26;
+}
+
+.two {
+  background-color: #191C26;
+  background-image: url("/img/contact-bg.png");
+  background-repeat: no-repeat;
 }
 
 /* #endregion *//*# sourceMappingURL=style.css.map */

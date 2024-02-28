@@ -1013,3 +1013,70 @@ body.body-overlay {
 }
 
 /* #endregion */
+
+/* #region form */
+
+.form {
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 850px) {
+  .form {
+    padding: 100px 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .form  {
+    padding: 85px 15px;
+  }
+}
+
+.one {
+  background-color: #191C26;
+}
+.two {
+  background-color: #191C26;
+  background-image: url("/img/contact-bg.png");
+  background-repeat: no-repeat;
+}
+.conrainer {
+}
+.form__wrap {
+}
+.main-form {
+}
+.title-h2 {
+}
+.form__title {
+}
+.input__form {
+}
+.name {
+}
+.phone {
+}
+.transparent-btn {
+}
+.form__btn {
+}
+.contacts {
+}
+.contacts__title {
+}
+.address {
+}
+.tel {
+}
+.mail {
+}
+.sub-title {
+}
+.contacts__sub-title {
+}
+.contacts__text {
+}
+
+/* #endregion */
