@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1210px;
   margin: 0 auto;
@@ -877,6 +878,72 @@ body.body-overlay {
   font-weight: 400;
   color: #555555;
   line-height: 30px;
+}
+
+/* #endregion */
+/* #region barbers */
+.barbers {
+  background-color: #F7F7F7;
+  padding: 120px 0px;
+}
+
+.barbers__sub-title {
+  margin-bottom: 20px;
+}
+
+.barbers__title {
+  margin-bottom: 45px;
+}
+
+.barbers__wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.barber__image {
+  max-width: 370px;
+}
+
+.name-barber {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.specialization-barber {
+  text-align: center;
+  color: #FF6C00;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.media__links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.media__link {
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0px 10px;
+  background-color: #FFFFFF;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.media__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.media__icon svg {
+  fill: #303030; /* Начальный цвет иконки */
+  transition: fill 0.3s ease; /* Плавный переход цвета */
+}
+
+.media__icon:hover svg {
+  fill: #FF6C00; /* Цвет иконки при наведении */
 }
 
 /* #endregion *//*# sourceMappingURL=style.css.map */
