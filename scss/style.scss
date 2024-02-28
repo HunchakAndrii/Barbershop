@@ -829,6 +829,18 @@ body.body-overlay {
   padding: 120px 10px;
 }
 
+@media (max-width: 850px) {
+  .barbers {
+    padding: 100px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .barbers {
+    padding: 85px 10px;
+  }
+}
+
 .barbers__sub-title {
   margin-bottom: 20px;
 }
@@ -845,7 +857,7 @@ body.body-overlay {
 }
 
 @media (max-width: 850px) {
-  .barbers__title  {
+  .barbers__title {
     max-width: 450px;
     margin: 0 auto 45px;
   }
@@ -874,7 +886,7 @@ body.body-overlay {
 .barber-card {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .barber__image {
@@ -941,6 +953,63 @@ body.body-overlay {
   margin: 0 auto;
   fill: #303030;
   transition: fill 0.3s ease;
+}
+
+/* #endregion */
+
+/* #region photos */
+
+.photos {
+  margin: 120px 0px;
+}
+
+@media (max-width: 850px) {
+  .photos {
+    margin: 100px 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .photos {
+    margin: 85px 15px;
+  }
+}
+
+.photos__sub-title {
+  margin-bottom: 45px;
+}
+
+.photos__wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 850px) {
+  .photos__wrap {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .photos__wrap {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.photo__image {
+}
+
+.photo__img {
+    width: 100%;
+
+  @media (max-width: 850px) {
+    &:first-child {
+      width: 270px;
+    }
+  }
 }
 
 /* #endregion */
