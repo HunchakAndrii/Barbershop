@@ -1294,3 +1294,85 @@ address {
 }
 
 /* #endregion */
+
+
+/* #region footer */
+
+.footer {
+  height: 127px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 127px;
+}
+
+@media (max-width: 650px) {
+  .footer__wrap {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__wrap {
+    white-space: nowrap;
+   position: relative;
+  }
+}
+
+
+.footer__text {
+  padding-left: 18px;
+  position: relative;
+  color: $gray;
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  &::before {
+    content: "";
+    background-image: url('/img/copyright-icon.svg');
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__text {
+    position: absolute;
+  }
+}
+
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  & span {
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: $black;
+  }
+}
+
+@media (max-width: 500px) {
+ .footer__links{
+   margin-left: auto;
+   gap: 20px;
+
+   & span {
+    display: none;
+   }
+  }
+}
+
+/* #endregion */
