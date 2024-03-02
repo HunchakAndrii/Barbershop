@@ -68,6 +68,7 @@
   font-weight: 600;
   cursor: pointer;
   max-width: 160px;
+  display: block;
 }
 
 .transparent-btn {
@@ -83,4 +84,5 @@
   cursor: pointer;
   max-width: 160px;
   width: 100%;
+  display: block;
 }/*# sourceMappingURL=variables.css.map */
